@@ -1,6 +1,14 @@
 
 1.git五分钟教程
 
+/*  github官网 注释
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/yz20107610738/ss.git
+git push -u origin master
+*/
+
 初始化仓库。使用当前目录作为Git仓库。
 git init
 
