@@ -1,0 +1,37 @@
+
+1.git五分钟教程
+
+初始化仓库。使用当前目录作为Git仓库。
+git init
+
+使用我们指定的目录作为git仓库
+git init newrepo
+
+- 添加新文件
+git add filename
+git add .   // 添加所有的文件
+
+- 提交版本 
+现在我们把它提交到仓库
+git commit -m "Adding files"
+
+如果您不使用-m，会出现编辑器来让你写自己的注释信息。
+当我们修改了很多文件，而不想每一个都add，想commit自动来提交本地修改，我们可以使用-a标识。
+git commit -a -m "Change some files"
+
+- 发布版本
+从服务器上克隆一个库
+git clone ssh://~~
+
+我们修改之后可以进行推送到服务器
+git push ssh://~~
+
+-取回更新
+如果您已经按照
+git pull 
+
+
+
+
+
+
