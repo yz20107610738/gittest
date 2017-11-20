@@ -2,12 +2,13 @@
 1.git五分钟教程
 
 /*  github官网 注释
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/yz20107610738/ss.git
-git push -u origin master
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/yz20107610738/ss.git
+    git push -u origin master
 */
+// master是分支  origin是通道  一般来说通道只有一个，分支会有多个
 
 初始化仓库。使用当前目录作为Git仓库。
 git init
@@ -35,8 +36,29 @@ git clone ssh://~~
 git push ssh://~~
 
 -取回更新
-如果您已经按照
+如果您已经按照上面的进行push, 下面命令表示，当前分支自动与唯一一个追踪分支进行合并
 git pull 
+从非默认位置更新到指定的url
+git pull http://git.example.com/~~
+
+
+-删除
+如果你想从资源库中删除文件，我们使用rm
+git rm file
+
+要创建一个新的分支
+git branch test
+
+branch命令不会将我们带入分支，只是创建一个分支，所以我们使用checkout命令来更改分支
+git checkout test
+我们在分支上修改点东西
+
+第一个分支，或主分支，被称为"master"。
+git checkout master
+git merge test
+
+如果你想删除分支，我们使用 -d 标识
+git branch -d -test
 
 
 
