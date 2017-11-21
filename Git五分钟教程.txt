@@ -56,6 +56,7 @@ git checkout test
 第一个分支，或主分支，被称为"master"。
 git checkout master
 git merge test
+git push origin master
 
 如果你想删除分支，我们使用 -d 标识
 git branch -d -test
